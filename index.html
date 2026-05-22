@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <meta charset="utf-8"/>
+        <title>WEBSITE NAME</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/ae944cfa84.js" crossorigin="anonymous"></script>        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <link rel="stylesheet" href="./dist/styles.css"/>
+    </head>
+
+    <body id="home-page">
+        <nav class="bg-gray-100 border-b border-gray-300">
+            <div class="container mx-auto px-4 flex items-center gap-4 py-2">
+                <a class="text-xl font-semibold text-gray-800 brand-link" href="index.html">NEWS WEBSITE</a>
+                <button class="md:hidden items-center p-2 rounded text-gray-800 hover:bg-gray-200 ml-auto" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="hidden md:block" id ="navbarNav">
+                    <ul class="flex flex-col md:flex-row gap-2 md:gap-4">
+                        <li><a class="text-gray-700 hover:text-blue-600" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a class="text-gray-700 hover:text-blue-600" href="sport.html"><i class="fa-solid fa-futbol"></i> Sport</a></li>
+                        <li><a class="text-gray-700 hover:text-blue-600" href="education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                        <li><a class="text-gray-700 hover:text-blue-600" href="gaming.html"><i class="fa-solid fa-gamepad"></i> Gaming</a></li>
+                        <li><a class="text-gray-700 hover:text-blue-600" href="search.html"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="container mx-auto px-4 py-4">
+            <h1 class="text-3xl font-bold">Welcome to WEBSITE NAME</h1>
+            <p class="mt-4">This is an awesome new website with news from around the world.</p>
+        </div> -->
+
+        <div class="p-12 mb-4 bg-gray-100 jumbotron">
+            <h1 class="text-5xl font-bold">Welcome to WEBSITE NAME</h1>
+            <p class="md:w-2/3 text-2xl">Read the latest sport, education and gaming news from around the world.</p>
+        </div>
+
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-center mt-4">
+                <div class="flex flex-col items-center">
+                    <img class="w-32 h-32 rounded-full object-cover mb-3" src="./images/jarmoluk-ball-488717_1920.jpg" width="140" height="140">
+                    <h2 class="text-2xl font-semibold">Sport News</h2>
+                    <p>Some text here</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="w-32 h-32 rounded-full object-cover mb-3" src="./images/stevepb-books-1012088_1920.jpg" width="140" height="140">
+                    <h2 class="text-2xl font-semibold">Education News</h2>
+                    <p>Some text here</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="w-32 h-32 rounded-full object-cover mb-3" src="./images/pexels-playstation-1845880_1920.jpg" width="140" height="140">
+                    <h2 class="text-2xl font-semibold">Gaming News</h2>
+                    <p>Some text here</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
