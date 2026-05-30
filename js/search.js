@@ -1,20 +1,19 @@
 const searchNews = (event) => {
     event.preventDefault();
     const keyword = document.querySelector("#keywords").value;
-    const url = 'https://content.guardianapis.com/search?q=' + keyword + '&api-key=';
-    const apiKey = 'e5befb33-f585-4485-a087-cf2612e60703';
+    const url = 'https://api.tvmaze.com/search/shows?q=' + keyword;
     const resultList = document.querySelector('#results');
     resultList.innerHTML = "";
 
-    fetch(url + apiKey)
+    fetch(url)
     .then((response) => response.json())
     .then((data) => {
-        data.response.results.forEach(function (value) {
+        data.forEach(function (value) {
             console.log(value);
             const articleElement = `<div><div class="bg-white rounded shadow border-2 p-4 mb-4">
-<h5 class="text-lg font-semibold mb-2">${value.webTitle}</h5>
-<p class="text-gray-600 mb-3">${value.sectionName}</p>
-<a target="_blank" href="${value.webUrl}" class="inline-block bg-blue-500
+<h5 class="text-lg font-semibold mb-2">${value.show.name}</h5>
+<p class="text-gray-600 mb-3">${value.show.genres.join(', ')}</p>
+<a target="_blank" href="${value.show.url}" class="inline-block bg-blue-500
 text-white
 px-4 py-2 rounded hover:bg-blue-600">
 View Article

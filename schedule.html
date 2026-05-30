@@ -7,14 +7,11 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://kit.fontawesome.com/ae944cfa84.js" crossorigin="anonymous"></script>        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> -->
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css"/>
     </head>
 
-    <body id="home-page">
+    <body id="schedule-page">
         <nav class="bg-gray-100 border-b border-gray-300">
             <div class="container mx-auto px-4 flex flex-wrap items-center py-2">
                 <a class="text-xl font-semibold text-gray-800 brand-link mr-6" href="index.html">TV SEARCH</a>
@@ -22,7 +19,7 @@
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <div class="hidden w-full md:block md:w-auto" id ="navbarNav">
-                    <ul class="flex flex-col md:flex-row gap-2 md:gap-4 mt-3 md:mt-0">
+                    <ul class="flex flex-col md:flex-row gap-2 md:gap-4">
                         <li><a class="text-gray-700 hover:text-blue-600" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                         <li><a class="text-gray-700 hover:text-blue-600" href="tv.html"><i class="fa-solid fa-tv"></i> TV</a></li>
                         <li><a class="text-gray-700 hover:text-blue-600" href="actors.html"><i class="fa-solid fa-user"></i> Actors</a></li>
@@ -32,42 +29,44 @@
                 </div>
             </div>
         </nav>
+
+        <div class="mt-3 text-3xl font-bold">
+            <div class="container mx-auto px-4">
+                <h1 class="mt-3 text-3xl font-bold">Today's Schedule</h1>
+                <ul id="results" class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4"></ul>
+            </div>
+            <script src="./js/schedule.js"></script>
+        </div>
+
         <!-- <div class="container mx-auto px-4 py-4">
             <h1 class="text-3xl font-bold">Welcome to WEBSITE NAME</h1>
             <p class="mt-4">This is an awesome new website with news from around the world.</p>
         </div> -->
 
-        <div class="p-12 mb-4 bg-gray-100 jumbotron">
-            <h1 class="text-5xl font-bold">Welcome to TV Search Website</h1>
-            <p class="md:w-2/3 text-2xl">Search for the latest TV shows and actors here.</p>
+        <!-- <div class="p-12 mb-4 bg-gray-100 jumbotron">
+            <h1 class="text-5xl font-bold">Welcome to WEBSITE NAME</h1>
+            <p class="md:w-2/3 text-2xl">Read the latest sport, education and gaming news from around the world.</p>
         </div>
 
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-center mt-4">
                 <div class="flex flex-col items-center">
-                    <img class="w-32 h-32 rounded-full object-cover mb-3" src="./images/renateko-remote-control-4891936.jpg" width="140" height="140">
-                    <!-- <h2 class="text-2xl font-semibold hover:text-blue-600" href="tv.html">TV Shows</h2> -->
-                    <a href="tv.html">
-                        <h2 class="text-grey-700 hover:text-blue-600 font-bold">TV Shows</h2>
-                    </a>
-                    <p>Latest TV Shows</p>
+                    <img class="w-32 h-32 rounded-full object-cover mb-3" src="./images/jarmoluk-ball-488717_1920.jpg" width="140" height="140">
+                    <h2 class="text-2xl font-semibold">Sport News</h2>
+                    <p>Some text here</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img class="w-32 h-32 rounded-full object-cover mb-3" src="./images/masks_curtain_blue.jpg" width="140" height="140">
-                    <a href="actors.html">
-                        <h2 class="text-grey-700 hover:text-blue-600 font-bold">Actors</h2>
-                    </a>
-                    <p>Popular Actors</p>
+                    <img class="w-32 h-32 rounded-full object-cover mb-3" src="./images/stevepb-books-1012088_1920.jpg" width="140" height="140">
+                    <h2 class="text-2xl font-semibold">Education News</h2>
+                    <p>Some text here</p>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img class="w-32 h-32 rounded-full object-cover mb-3" src="./images/vkaresz72-book-1750740.jpg" width="140" height="140">
-                    <a href="schedule.html">
-                        <h2 class="text-grey-700 hover:text-blue-600 font-bold">Schedule</h2>
-                    </a>
-                    <p>Today's Schedule</p>
+                    <img class="w-32 h-32 rounded-full object-cover mb-3" src="./images/pexels-playstation-1845880_1920.jpg" width="140" height="140">
+                    <h2 class="text-2xl font-semibold">Gaming News</h2>
+                    <p>Some text here</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </body>
 </html>
